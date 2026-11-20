@@ -1,0 +1,6 @@
+{
+  "name": "Farmacia Alborada — Botica Online y Código QR",
+  "description": "Sitio web de Farmacia Alborada con catálogo farmacéutico, servicios clínicos y generador de código QR para compartir su URL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
