@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #qr-printable-card,
+  #qr-printable-card * {
+    visibility: visible;
+  }
+  #qr-printable-card {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: 360px;
+    height: fit-content;
+    border: 1px solid #cbd5e1;
+    box-shadow: none;
+    background: #ffffff;
+  }
+}
